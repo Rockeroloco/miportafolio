@@ -79,6 +79,8 @@ a {
 
 ul {
     list-style: none;
+    padding-inline-start: 0;
+    text-align: -webkit-center;
 }
 
 /* Estilo para el menú */
@@ -112,7 +114,7 @@ ul {
     display: inline-flex;
     align-items: center;
     gap: 40px;
-    margin-right: 40px;
+    margin-right: 70px;
 }
 
 .menu__list__item {
@@ -324,6 +326,8 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    text-align: center;
+    padding-inline-start: 0px;
 }
 
 .hobbies__box {
@@ -332,17 +336,22 @@ ul {
     padding: 20px;
     width: 150px;
     text-align: center;
+    align-content: center;
+    
+
 }
 
 .hobbies__img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
+    align-items: center;
+   
 }
 
 .hobbies__name {
     font-size: 18px;
-    font-weight: bold;
+   
 }
 
 /* Estilo para la sección 'Formación académica' */
