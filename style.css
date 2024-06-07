@@ -636,9 +636,26 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 425px) {
 
 /*Menu*/
+.title__bio {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 50%;
+}
+
 
 /*Titulo*/
-
+.title__bio {
+    font-size: 3.5rem;
+}
+.title__profile {
+  
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 8px solid rgb(31, 28, 28);
+    margin-top: 50%;
+    margin-left: -100%;
+}
 /*Sección sobre mi*/
 
 /*Skills*/
@@ -650,6 +667,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Experiencia Profesional*/
 
  /*Contacto*/
-
+ .formcontato__form{
+    width: auto;
+    width: 350px;
+    max-width: 350px;
+ }
 /*Footer*/
 }
