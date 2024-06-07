@@ -121,35 +121,17 @@ ul {
     margin: 10px 0;
 }
 
-.nav-list__item__contato {
-    color: white;
+.menu__list__item__contato {
+    /*color: white;
     font-size: 18px;
     transition: color 0.3s;
     vertical-align: baseline;
     display:none;
 }
-
-.nav-list__item a:hover {
+/*
+.menu__list__item a:hover {
     color: #9e9881;
-}
-
-
-.nav-list {
-    list-style-type: none;
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-list li a {
-    text-decoration: none;
-    color: #1c1c1c;
-}
-
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-
+}*/
 
 
 
@@ -485,8 +467,6 @@ ul {
     padding: 50px 20px;
 }
 
-
-
 .formcontato__contacto {
     display: flex;
     flex-wrap: wrap;
@@ -500,10 +480,6 @@ ul {
     flex: 1;
     text-align: center;
 }
-
-.error-message {
-    color: red;
-    font-size: 0.9em;}
 
 .formcontato__img {
     width: 100%;
@@ -651,64 +627,18 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media screen (max-width: 550px) {
-    
-    
-    .abrir-menu,
-    .cerrar-menu {
-        display:block;
-        background-color:transparent;
-        cursor:pointer;
-    }
+@media (min-width: 425px) {
 
-    .abrir-menu {
-        color: #1c1c1c;
-    }
-
-    .cerrar-menu {
-        color: #ececec;
-    }
-
-    .nav {
-        opacity: 0;
-        visibility: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: end;
-        gap: 1rem;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        background-color: #1c1c1c;
-        padding: 2rem;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
-    }
-
-    .nav.visible {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav-list {
-        list-style-type: none;
-        display: flex;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: end;
-    }
-
-    .nav-list li a {
-        text-decoration: none;
-        color: #1c1c1c;
-    }
 /*Menu*/
 
 /*Titulo*/
-.title__profile{
-    margin-top: 20%;
-}
+
 /*Sección sobre mi*/
+.firma{
+    width: 300px;
+    max-width: fit-content;
+    margin-inline-start: -40%;
+}
 
 /*Skills*/
 
@@ -719,6 +649,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Experiencia Profesional*/
 
  /*Contacto*/
-
+ .formcontato__form{
+    width: auto;
+    width: 350px;
+    max-width: 350px;
+ }
 /*Footer*/
 }
