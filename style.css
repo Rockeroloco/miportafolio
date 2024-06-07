@@ -633,8 +633,8 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
 
+@media (max-width: 425px) {
 /*Menu*/
 .title__bio {
     font-size: 28px;
@@ -642,6 +642,27 @@ Utiliza las referencias de los breakpoints @media abajo */
     margin-bottom: 50%;
 }
 
+
+    .menu__list {
+        display: none;
+    }
+
+    .menu__toggle {
+        display: block;
+    }
+
+    .menu__toggle:after {
+        content: "\2630";
+    }
+
+    .menu__list.active {
+        display: block;
+    }
+
+    .menu__list__item {
+        display: block;
+    }
+}
 
 /*Titulo*/
 .title__bio {
