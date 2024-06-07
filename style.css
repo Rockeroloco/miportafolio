@@ -122,16 +122,34 @@ ul {
 }
 
 .menu__list__item__contato {
-    /*color: white;
+    color: white;
     font-size: 18px;
     transition: color 0.3s;
-    vertical-align: baseline;*/
+    vertical-align: baseline;
     display:none;
 }
-/*
+
 .menu__list__item a:hover {
     color: #9e9881;
-}*/
+}
+
+
+.menu__list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.menu__list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
 
 
 
@@ -633,12 +651,70 @@ Utiliza las referencias de los breakpoints @media abajo */
 }
 
 /*Mobile*/
-@media (min-width: 425px) {
+@media screen (max-width: 550px) {
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .abrir-menu,
+    .cerrar-menu {
+        display:block;
+        border:0px;
+        font-size:1.25rem;
+        background-color:transparent;
+        cursor:pointer;
+    }
 
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .menu__list {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .menu__list li a {
+        text-decoration: none;
+        color: #1c1c1c;
+    }
 /*Menu*/
 
 /*Titulo*/
-
+img.title__profile{
+    margin-top: 20%;
+}
 /*Sección sobre mi*/
 
 /*Skills*/
