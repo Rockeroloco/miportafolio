@@ -465,8 +465,6 @@ ul {
     padding: 50px 20px;
 }
 
-
-
 .formcontato__contacto {
     display: flex;
     flex-wrap: wrap;
@@ -480,10 +478,6 @@ ul {
     flex: 1;
     text-align: center;
 }
-
-.error-message {
-    color: red;
-    font-size: 0.9em;}
 
 .formcontato__img {
     width: 100%;
