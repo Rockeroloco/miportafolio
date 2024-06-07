@@ -109,7 +109,7 @@ ul {
     font-weight: bold;
 }
 
-.menu__list {
+.nav-list {
     margin-top: 2.5%;
     display: inline-flex;
     align-items: center;
@@ -117,11 +117,11 @@ ul {
     margin-right: 70px;
 }
 
-.menu__list__item {
+.nav-list__item {
     margin: 10px 0;
 }
 
-.menu__list__item__contato {
+.nav-list__item__contato {
     color: white;
     font-size: 18px;
     transition: color 0.3s;
@@ -129,18 +129,18 @@ ul {
     display:none;
 }
 
-.menu__list__item a:hover {
+.nav-list__item a:hover {
     color: #9e9881;
 }
 
 
-.menu__list {
+.nav-list {
     list-style-type: none;
     display: flex;
     gap: 1rem;
 }
 
-.menu__list li a {
+.nav-list li a {
     text-decoration: none;
     color: #1c1c1c;
 }
@@ -653,17 +653,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Mobile*/
 @media screen (max-width: 550px) {
     
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: sans-serif;
-    }
+    
     .abrir-menu,
     .cerrar-menu {
         display:block;
-        border:0px;
-        font-size:1.25rem;
         background-color:transparent;
         cursor:pointer;
     }
@@ -697,7 +690,7 @@ Utiliza las referencias de los breakpoints @media abajo */
         visibility: visible;
     }
     
-    .menu__list {
+    .nav-list {
         list-style-type: none;
         display: flex;
         gap: 1rem;
@@ -705,14 +698,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         align-items: end;
     }
 
-    .menu__list li a {
+    .nav-list li a {
         text-decoration: none;
         color: #1c1c1c;
     }
 /*Menu*/
 
 /*Titulo*/
-img.title__profile{
+.title__profile{
     margin-top: 20%;
 }
 /*Sección sobre mi*/
